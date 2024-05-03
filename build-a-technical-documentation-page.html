@@ -1,0 +1,236 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Data_Structures_and_Algorithms">Data Structures and Algorithms</a>
+    <a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a>
+    <a class="nav-link" href="#Web_Development">Web Development</a>
+    <a class="nav-link" href="#Database_Management">Database Management</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Welcome to our Technical Documentation. In this document, we will explore various concepts related to programming languages and software development.</p>
+      <p>This documentation aims to provide comprehensive information on key topics in the field of software engineering and computer science.</p>
+      <p>Feel free to navigate using the sidebar to learn more about specific topics.</p>
+      <p>Additional paragraph 1.</p>
+      <p>Additional paragraph 2.</p>
+      <code>console.log("Hello, world!");</code>
+      <code>
+        <pre>
+          function bubbleSort(arr) {
+            let len = arr.length;
+            for (let i = 0; i < len; i++) {
+              for (let j = 0; j < len - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                  let temp = arr[j];
+                  arr[j] = arr[j + 1];
+                  arr[j + 1] = temp;
+                }
+              }
+            }
+            return arr;
+          }
+        </pre>
+      </code>
+    </section>
+    <section class="main-section" id="Data_Structures_and_Algorithms">
+      <header>Data Structures and Algorithms</header>
+      <p>In this section, we will discuss fundamental data structures such as arrays, linked lists, stacks, and queues. We will also cover common algorithms like sorting and searching.</p>
+      <p>Here's an example of a basic sorting algorithm in pseudocode:</p>
+      <code>
+        <pre>
+          function bubbleSort(arr) {
+            let len = arr.length;
+            for (let i = 0; i < len; i++) {
+              for (let j = 0; j < len - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                  let temp = arr[j];
+                  arr[j] = arr[j + 1];
+                  arr[j + 1] = temp;
+                }
+              }
+            }
+            return arr;
+          }
+        </pre>
+      </code>
+      <ul>
+        <li>Array</li>
+        <li>Linked List</li>
+        <li>Stack</li>
+        <li>Queue</li>
+        <li>Sorting Algorithm</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Object-Oriented_Programming">
+      <header>Object-Oriented Programming</header>
+      <p>In this section, we will delve into the principles of Object-Oriented Programming (OOP) including encapsulation, inheritance, polymorphism, and abstraction. Examples will be provided in popular programming languages like Java and Python.</p>
+      <code>
+        <pre>
+          public class Car {
+            private String brand;
+            private String model;
+            private int year;
+
+            public Car(String brand, String model, int year) {
+              this.brand = brand;
+              this.model = model;
+              this.year = year;
+            }
+
+            public void displayInfo() {
+              System.out.println("Brand: " + brand);
+              System.out.println("Model: " + model);
+              System.out.println("Year: " + year);
+            }
+          }
+        </pre>
+      </code>
+      <ul>
+        <li>Encapsulation</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+        <li>Abstraction</li>
+        <li>Class</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Web_Development">
+      <header>Web Development</header>
+      <p>This section covers various aspects of web development including HTML, CSS, JavaScript, and frameworks like React and Angular. We will also touch on topics such as responsive design and web accessibility.</p>
+      <code>
+        <pre>
+          @media only screen and (max-width: 768px) {
+            /* Styles for smaller screens */
+            .container {
+              width: 100%;
+            }
+          }
+        </pre>
+      </code>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Angular</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Database_Management">
+      <header>Database Management</header>
+      <p>In this section, we will explore database management systems such as MySQL, PostgreSQL, and MongoDB. Topics include data modeling, querying, and transactions.</p>
+      <code>
+        <pre>
+          SELECT * FROM users WHERE age > 18;
+        </pre>
+      </code>
+      <ul>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Data Modeling</li>
+        <li>Transactions</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.nav-link');
+
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Main Content Styles */
+#main-doc {
+  margin-left: 270px; /* Adjust for the width of the navbar */
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+
+** end of undefined **
+
