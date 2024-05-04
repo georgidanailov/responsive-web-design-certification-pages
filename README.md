@@ -1,1 +1,1 @@
-Built a technical-documentation webpage for freeCodeCamp Responsive Web Design certification. This is project assignment 3 of 5
+Here are the last 3 projects that were required in order to receive a certification for Responsive Web Design from freeCodeCamp.
